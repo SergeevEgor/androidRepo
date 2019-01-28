@@ -22,14 +22,12 @@ public class MainActivity extends AppCompatActivity {
   }
 
   public void updateView( ) {
-    TextView amountTV = ( TextView ) findViewById( R.id.amount );
-    amountTV.setText( mortgage.getFormattedAmount( ) );
     TextView yearsTV = ( TextView ) findViewById( R.id.years );
     yearsTV.setText( "" + mortgage.getYears( ) );
     TextView rateTV = ( TextView ) findViewById( R.id.rate );
-    rateTV.setText( 100 * mortgage.getRate( ) + "%" );
+    rateTV.setText( 200 * mortgage.getRate( ) + "%" );
     TextView monthlyTV = ( TextView ) findViewById( R.id.payment );
-    monthlyTV.setText( mortgage.formattedMonthlyPayment( ) );
+//    monthlyTV.setText( mortgage.formattedMonthlyPayment( ) );
     TextView totalTV = ( TextView ) findViewById( R.id.total );
     totalTV.setText( mortgage.formattedTotalPayment( ) );
   }
